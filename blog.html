@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Blog</title>
+
+  <link rel="stylesheet" href="./assets/css/normalize.css">
+  <link rel="stylesheet" href="./assets/css/fonts.css">
+  <link rel="stylesheet" href="./assets/libs/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="./assets/libs/slick.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body class="blog">
+  <header id="header">
+    <div class="header__top container">
+      <nav class="header__menu">
+        <ul>
+          <li class="header__menu-item">
+            <a href="/#sales">
+              Акции
+            </a>
+          </li>
+          <li class="header__menu-item">
+            <a href="/#photos">
+              Галерея
+            </a>
+          </li>
+          <li class="header__menu-item">
+            <a href="/#alive">
+              Раки живые
+            </a>
+          </li>
+          <li class="header__menu-item">
+            <a href="/#boiled">
+              Раки вареные
+            </a>
+          </li>
+          <li class="header__menu-item">
+            <a href="/#company">
+              О компании
+            </a>
+          </li>
+          <li class="header__menu-item">
+            <a href="/#faq">
+              FAQ
+            </a>
+          </li>
+          <li class="header__menu-item">
+            <a href="/#shipping">
+              Оплата и доставка
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <hr class="header__top-line">
+      <div class="header__top-side">
+        <div class="header__top-shipping">
+          <p class="header__top-shipping__title">
+            Самовывоз:
+          </p>
+          <p class="header__top-shipping__content">
+            <img src="./media/shipping-info.svg" alt="">
+            М. Дубровка
+          </p>
+        </div>
+        <div class="header__top-social">
+          <a class="header__top-social__item" href="#">
+            <img src="./media/telegram.svg" alt="">
+          </a>
+          <a class="header__top-social__item" href="#">
+            <img src="./media/whatsapp.svg" alt="">
+          </a>
+          <a class="header__top-social__item" href="#">
+            <img src="./media/viber.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="header__bottom container">
+      <div class="header__bottom-buttons">
+        <a class="btn btn-white btn-border" href="#catalog">
+          Каталог
+        </a>
+        <button type="button" class="btn btn-red btn-border" data-open_popup="callback">
+          Экспресс заказ
+        </button>
+      </div>
+      <a class="header__bottom-logo" href="/">
+        <img src="./media/logo.png" alt="">
+      </a>
+      <div class="header__bottom-side">
+        <a class="header__bottom-phone" href="tel:+74958774942">
+          +7 (495) 877-49-42
+        </a>
+        <button type="button" class="header__bottom-callback btn" data-open_popup="callback">
+          Заказать звонок
+        </button>
+        <button type="button" class="header__bottom-cart">
+          <span class="header__bottom-cart__counter">
+            2
+          </span>
+          <img src="./media/cart.svg" alt="">
+        </button>
+        <button type="button" class="burger"></button>
+      </div>
+    </div>
+  </header>
+  <section id="breadcrumbs">
+    <div class="container">
+      <ul class="breadcrumbs">
+        <li>
+          <a href="/">
+            Главная
+          </a>
+        </li>
+        <li class="current">
+          <a>
+            Блог
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section id="blog">
+    <div class="container">
+      <h2 class="title">
+        Блог
+      </h2>
+      <div class="blog__wrapper">
+        <div class="blog__item">
+          <a class="blog__item-image" href="./sinlge-blog.html">
+            <img src="./media/blog-image.png" alt="">
+          </a>
+          <div class="blog__item-info">
+            <p class="blog__item-date">
+              25.09.2021
+            </p>
+            <p class="blog__item-title">
+              Живые Раки
+            </p>
+            <p class="blog__item-text">
+              Одним из популярных морских продуктов в современных условиях является рак рыба. Спрос на такой товар постоянно растет, что связано с удивительными вкусовыми качествами предложения. Есть возможность насладиться действительно удивительным продуктом, мясо которого невероятно вкусное и подходит в качестве закуски или даже основного блюда.
+            </p>
+            <a href="#" class="blog__item-link">
+              <img src="./media/globe.svg" alt="">
+              <span>rakigastrobar.ru</span>
+            </a>
+            <a href="#" class="blog__item-link">
+              <img src="./media/inst.svg" alt="">
+              <span>@rakigastrobar</span>
+            </a>
+            <div class="blog__item-btn_more btn btn-red">
+              <img src="./media/finger-print.svg" alt="">
+              <span>Подробнее</span>
+            </div>
+          </div>
+        </div>
+        <div class="blog__item">
+          <a class="blog__item-image" href="./sinlge-blog.html">
+            <img src="./media/blog-image.png" alt="">
+          </a>
+          <div class="blog__item-info">
+            <p class="blog__item-date">
+              25.09.2021
+            </p>
+            <p class="blog__item-title">
+              Живые Раки
+            </p>
+            <p class="blog__item-text">
+              Одним из популярных морских продуктов в современных условиях является рак рыба. Спрос на такой товар постоянно растет, что связано с удивительными вкусовыми качествами предложения. Есть возможность насладиться действительно удивительным продуктом, мясо которого невероятно вкусное и подходит в качестве закуски или даже основного блюда.
+            </p>
+            <a href="#" class="blog__item-link">
+              <img src="./media/globe.svg" alt="">
+              <span>rakigastrobar.ru</span>
+            </a>
+            <a href="#" class="blog__item-link">
+              <img src="./media/inst.svg" alt="">
+              <span>@rakigastrobar</span>
+            </a>
+            <div class="blog__item-btn_more btn btn-red">
+              <img src="./media/finger-print.svg" alt="">
+              <span>Подробнее</span>
+            </div>
+          </div>
+        </div>
+        <div class="blog__item">
+          <a class="blog__item-image" href="./sinlge-blog.html">
+            <img src="./media/blog-image.png" alt="">
+          </a>
+          <div class="blog__item-info">
+            <p class="blog__item-date">
+              25.09.2021
+            </p>
+            <p class="blog__item-title">
+              Живые Раки
+            </p>
+            <p class="blog__item-text">
+              Одним из популярных морских продуктов в современных условиях является рак рыба. Спрос на такой товар постоянно растет, что связано с удивительными вкусовыми качествами предложения. Есть возможность насладиться действительно удивительным продуктом, мясо которого невероятно вкусное и подходит в качестве закуски или даже основного блюда.
+            </p>
+            <a href="#" class="blog__item-link">
+              <img src="./media/globe.svg" alt="">
+              <span>rakigastrobar.ru</span>
+            </a>
+            <a href="#" class="blog__item-link">
+              <img src="./media/inst.svg" alt="">
+              <span>@rakigastrobar</span>
+            </a>
+            <div class="blog__item-btn_more btn btn-red">
+              <img src="./media/finger-print.svg" alt="">
+              <span>Подробнее</span>
+            </div>
+          </div>
+        </div>
+        <div class="blog__item">
+          <a class="blog__item-image" href="./sinlge-blog.html">
+            <img src="./media/blog-image.png" alt="">
+          </a>
+          <div class="blog__item-info">
+            <p class="blog__item-date">
+              25.09.2021
+            </p>
+            <p class="blog__item-title">
+              Живые Раки
+            </p>
+            <p class="blog__item-text">
+              Одним из популярных морских продуктов в современных условиях является рак рыба. Спрос на такой товар постоянно растет, что связано с удивительными вкусовыми качествами предложения. Есть возможность насладиться действительно удивительным продуктом, мясо которого невероятно вкусное и подходит в качестве закуски или даже основного блюда.
+            </p>
+            <a href="#" class="blog__item-link">
+              <img src="./media/globe.svg" alt="">
+              <span>rakigastrobar.ru</span>
+            </a>
+            <a href="#" class="blog__item-link">
+              <img src="./media/inst.svg" alt="">
+              <span>@rakigastrobar</span>
+            </a>
+            <div class="blog__item-btn_more btn btn-red">
+              <img src="./media/finger-print.svg" alt="">
+              <span>Подробнее</span>
+            </div>
+          </div>
+        </div>
+        <div class="blog__item">
+          <a class="blog__item-image" href="./sinlge-blog.html">
+            <img src="./media/blog-image.png" alt="">
+          </a>
+          <div class="blog__item-info">
+            <p class="blog__item-date">
+              25.09.2021
+            </p>
+            <p class="blog__item-title">
+              Живые Раки
+            </p>
+            <p class="blog__item-text">
+              Одним из популярных морских продуктов в современных условиях является рак рыба. Спрос на такой товар постоянно растет, что связано с удивительными вкусовыми качествами предложения. Есть возможность насладиться действительно удивительным продуктом, мясо которого невероятно вкусное и подходит в качестве закуски или даже основного блюда.
+            </p>
+            <a href="#" class="blog__item-link">
+              <img src="./media/globe.svg" alt="">
+              <span>rakigastrobar.ru</span>
+            </a>
+            <a href="#" class="blog__item-link">
+              <img src="./media/inst.svg" alt="">
+              <span>@rakigastrobar</span>
+            </a>
+            <div class="blog__item-btn_more btn btn-red">
+              <img src="./media/finger-print.svg" alt="">
+              <span>Подробнее</span>
+            </div>
+          </div>
+        </div>
+        <div class="blog__item">
+          <a class="blog__item-image" href="./sinlge-blog.html">
+            <img src="./media/blog-image.png" alt="">
+          </a>
+          <div class="blog__item-info">
+            <p class="blog__item-date">
+              25.09.2021
+            </p>
+            <p class="blog__item-title">
+              Живые Раки
+            </p>
+            <p class="blog__item-text">
+              Одним из популярных морских продуктов в современных условиях является рак рыба. Спрос на такой товар постоянно растет, что связано с удивительными вкусовыми качествами предложения. Есть возможность насладиться действительно удивительным продуктом, мясо которого невероятно вкусное и подходит в качестве закуски или даже основного блюда.
+            </p>
+            <a href="#" class="blog__item-link">
+              <img src="./media/globe.svg" alt="">
+              <span>rakigastrobar.ru</span>
+            </a>
+            <a href="#" class="blog__item-link">
+              <img src="./media/inst.svg" alt="">
+              <span>@rakigastrobar</span>
+            </a>
+            <div class="blog__item-btn_more btn btn-red">
+              <img src="./media/finger-print.svg" alt="">
+              <span>Подробнее</span>
+            </div>
+          </div>
+        </div>
+        <div class="blog__item">
+          <a class="blog__item-image" href="./sinlge-blog.html">
+            <img src="./media/blog-image.png" alt="">
+          </a>
+          <div class="blog__item-info">
+            <p class="blog__item-date">
+              25.09.2021
+            </p>
+            <p class="blog__item-title">
+              Живые Раки
+            </p>
+            <p class="blog__item-text">
+              Одним из популярных морских продуктов в современных условиях является рак рыба. Спрос на такой товар постоянно растет, что связано с удивительными вкусовыми качествами предложения. Есть возможность насладиться действительно удивительным продуктом, мясо которого невероятно вкусное и подходит в качестве закуски или даже основного блюда.
+            </p>
+            <a href="#" class="blog__item-link">
+              <img src="./media/globe.svg" alt="">
+              <span>rakigastrobar.ru</span>
+            </a>
+            <a href="#" class="blog__item-link">
+              <img src="./media/inst.svg" alt="">
+              <span>@rakigastrobar</span>
+            </a>
+            <div class="blog__item-btn_more btn btn-red">
+              <img src="./media/finger-print.svg" alt="">
+              <span>Подробнее</span>
+            </div>
+          </div>
+        </div>
+        <div class="blog__item">
+          <a class="blog__item-image" href="./sinlge-blog.html">
+            <img src="./media/blog-image.png" alt="">
+          </a>
+          <div class="blog__item-info">
+            <p class="blog__item-date">
+              25.09.2021
+            </p>
+            <p class="blog__item-title">
+              Живые Раки
+            </p>
+            <p class="blog__item-text">
+              Одним из популярных морских продуктов в современных условиях является рак рыба. Спрос на такой товар постоянно растет, что связано с удивительными вкусовыми качествами предложения. Есть возможность насладиться действительно удивительным продуктом, мясо которого невероятно вкусное и подходит в качестве закуски или даже основного блюда.
+            </p>
+            <a href="#" class="blog__item-link">
+              <img src="./media/globe.svg" alt="">
+              <span>rakigastrobar.ru</span>
+            </a>
+            <a href="#" class="blog__item-link">
+              <img src="./media/inst.svg" alt="">
+              <span>@rakigastrobar</span>
+            </a>
+            <div class="blog__item-btn_more btn btn-red">
+              <img src="./media/finger-print.svg" alt="">
+              <span>Подробнее</span>
+            </div>
+          </div>
+        </div>
+        <div class="blog__item">
+          <a class="blog__item-image" href="./sinlge-blog.html">
+            <img src="./media/blog-image.png" alt="">
+          </a>
+          <div class="blog__item-info">
+            <p class="blog__item-date">
+              25.09.2021
+            </p>
+            <p class="blog__item-title">
+              Живые Раки
+            </p>
+            <p class="blog__item-text">
+              Одним из популярных морских продуктов в современных условиях является рак рыба. Спрос на такой товар постоянно растет, что связано с удивительными вкусовыми качествами предложения. Есть возможность насладиться действительно удивительным продуктом, мясо которого невероятно вкусное и подходит в качестве закуски или даже основного блюда.
+            </p>
+            <a href="#" class="blog__item-link">
+              <img src="./media/globe.svg" alt="">
+              <span>rakigastrobar.ru</span>
+            </a>
+            <a href="#" class="blog__item-link">
+              <img src="./media/inst.svg" alt="">
+              <span>@rakigastrobar</span>
+            </a>
+            <div class="blog__item-btn_more btn btn-red">
+              <img src="./media/finger-print.svg" alt="">
+              <span>Подробнее</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer id="footer">
+    <div class="footer__top container">
+      <nav class="footer__menu">
+        <ul>
+          <li class="footer__menu-item">
+            <a href="/#sales">
+              Акции
+            </a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="/#photos">
+              Галерея
+            </a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="/#alive">
+              Раки живые
+            </a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="/#boiled">
+              Раки вареные
+            </a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="/#company">
+              О компании
+            </a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="/#faq">
+              FAQ
+            </a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="/#shipping">
+              Оплата и доставка
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <hr class="footer__menu-line">
+      <div class="footer__menu-side">
+        <div class="footer__menu-shipping">
+          <p class="footer__menu-shipping__title">
+            Самовывоз:
+          </p>
+          <p class="footer__menu-shipping__content">
+            <img src="./media/shipping-info.svg" alt="">
+            М. Дубровка
+          </p>
+        </div>
+        <div class="footer__menu-social">
+          <a class="footer__menu-social__item" href="#">
+            <img src="./media/telegram.svg" alt="">
+          </a>
+          <a class="footer__menu-social__item" href="#">
+            <img src="./media/whatsapp.svg" alt="">
+          </a>
+          <a class="footer__menu-social__item" href="#">
+            <img src="./media/viber.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom container">
+      <a class="footer__bottom-logo" href="/">
+        <img src="./media/logo.png" alt="">
+      </a>
+      <p class="footer__bottom-copyright">
+        Все права защищены © 2021
+      </p>
+      <div class="footer__bottom-buttons">
+        <a href="tel:+74958774942" class="footer__bottom-phone">
+          +7 (495) 877-49-42
+        </a>
+        <button type="button" class="footer__bottom-callback" data-open_popup="callback">
+          Заказать звонок
+        </button>
+      </div>
+    </div>
+  </footer>
+  <div class="popup" id="callback">
+    <div class="popup__bg close"></div>
+    <div class="popup__container">
+      <div class="popup__header">
+        <p class="subtitle">
+          Перезвоните мне
+        </p>
+        <button type="button" class="close popup__close x"></button>
+        <p class="popup__info">
+          Оставьте ваши контактные данные, и мы с Вами свяжемся в ближайшее время
+        </p>
+      </div>
+      <div class="popup__body">
+        <form action="#" method="POST">
+          <input class="input" type="text" placeholder="Имя" name="name">
+          <input class="input" type="tel" placeholder="Телефон" name="phone">
+          <label class="checkbox_comfirm">
+            <input type="checkbox" required checked>
+            <div class="square"></div>
+            <p class="text">
+              Я прочитал(-а) <a href="#">Пользовательское соглашение</a> и согласен(-на) с условиями
+            </p>
+          </label>
+          <button class="btn btn-border btn-red">
+            Отправить
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="popup" id="thanks">
+    <div class="popup__bg close"></div>
+    <div class="popup__container">
+      <div class="popup__header">
+        <button type="button" class="close popup__close x"></button>
+      </div>
+      <div class="popup__body">
+        <p class="subtitle">
+          Спасибо! 
+        </p>
+        <p class="subtitle_info">
+          Ваша заявка оптравлена, мы
+          <br>свяжемся с Вами в ближайшее время.
+        </p>
+      </div>
+    </div>
+  </div>
+  <script src="./assets/js/jquery-3.6.0.min.js"></script>
+  <script src="./assets/libs/jquery.fancybox.min.js"></script>
+  <script src="./assets/libs/slick.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
